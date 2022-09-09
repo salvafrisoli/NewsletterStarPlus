@@ -1,106 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>StarPlus</title>
     <style>
-        @import url('//db.onlinewebfonts.com/c/f940f28d4cd3e9e610ef07217f115995?family=Neuzeit+Grotesk+Ligth');
-        @import url('//db.onlinewebfonts.com/c/180ca1285125dca23ad9e2112675649c?family=Neuzeit+Grotesk+Condense');
-        @import url('//db.onlinewebfonts.com/c/d533392fb39dbacb39fc446b4f055b4d?family=Neuzeit+Grotesk+Black');
-        @import url('//db.onlinewebfonts.com/c/b4cea26b49cad4a6e13b8c5218a39213?family=Neuzeit+Grotesk+Bold');
-        @import url('//db.onlinewebfonts.com/c/24ee22b1aca25a7d83f28d63c4093f8e?family=Neuzeit+Grotesk+Regular');
+      @import url("//db.onlinewebfonts.com/c/f940f28d4cd3e9e610ef07217f115995?family=Neuzeit+Grotesk+Ligth");
+      @import url("//db.onlinewebfonts.com/c/180ca1285125dca23ad9e2112675649c?family=Neuzeit+Grotesk+Condense");
+      @import url("//db.onlinewebfonts.com/c/d533392fb39dbacb39fc446b4f055b4d?family=Neuzeit+Grotesk+Black");
+      @import url("//db.onlinewebfonts.com/c/b4cea26b49cad4a6e13b8c5218a39213?family=Neuzeit+Grotesk+Bold");
+      @import url("//db.onlinewebfonts.com/c/24ee22b1aca25a7d83f28d63c4093f8e?family=Neuzeit+Grotesk+Regular");
 
-        body {
-            background-color: #242425;
-        }
+      body {
+        background-color: #242425;
+      }
 
-        h1 {
-            color: #EBE9F0;
-            text-align: center;
-            font-family: 'Neuzeit Grotesk Black';
-            font-size: 56px; 
-            letter-spacing: 3px; 
-            margin: 0;
-        }
+      h1 {
+        color: #ebe9f0;
+        text-align: center;
+        font-family: "Neuzeit Grotesk Black";
+        font-size: 56px;
+        letter-spacing: 3px;
+        margin: 0;
+      }
 
-        table {
-            background-color: #E0DAF5;
-            margin: auto;
-            min-width: 650px;
-        }
+      table {
+        background-color: #e0daf5;
+        margin: auto;
+        min-width: 650px;
+      }
 
-        td {
-            text-align: center;
-        }
+      td {
+        text-align: center;
+      }
 
-        table .titulo_evento {
-            font-family: 'Neuzeit Grotesk';
-            text-transform: uppercase;
-            width: 50%;
-            margin: auto;
-        }
+      table .titulo_evento {
+        font-family: "Neuzeit Grotesk";
+        text-transform: uppercase;
+        width: 50%;
+        margin: auto;
+        font-weight: 700;
+      }
 
-        table .descripcion_evento {
-            font-family: 'Neuzeit Grotesk Ligth';
-            width: 50%;
-            padding: 20px;
-            margin: auto;
-        }
+      table .descripcion_evento {
+        font-family: "Neuzeit Grotesk Ligth";
+        width: 50%;
+        padding: 20px;
+        margin: auto;
+        font-weight: 700;
 
-        table .button_votar{
-            display: inline-block;
-            background-color: #FA1B54;
-            width: 40%;
-            margin-top: 5px;
-            padding: 12px;
-            text-transform: uppercase;
-            font-family: 'Neuzeit Grotesk';
-            letter-spacing: 2px;
-            border-radius: 10px;
-            border: 1px solid black;
-        }
+      }
 
+      table .button_votar {
+        display: inline-block;
+        background-color: #fa1b54;
+        width: 40%;
+        margin-top: 5px;
+        padding: 12px;
+        text-transform: uppercase;
+        font-family: "Neuzeit Grotesk";
+        letter-spacing: 2px;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      table .redes {
+        max-width: 50px;
+      }
+      table .redesInstagram{
+        max-width: 46px;
+        margin-bottom: 2px;
+      }
+      table .titulo_footer {
+        font-family: "Neuzeit Grotesk";
+        margin: 20px auto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 25px;
+        line-height: 19px;
+        align-items: center;
+        text-align: center;
+        letter-spacing: 0.05em;
+      }
+      table .terminosFooter{
+        font-family: "Neuzeit Grotesk";
+        font-weight: 400;
+        font-size: 15px;
+        width: 473px;
+        height: 123px;
+      }
 
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <table>
-        <tr>
-            <td style="background-color: #230321; padding: 15px; text-align: center;">
-                <h1>ST
-                    <img src="https://i.postimg.cc/RFhzf036/Star-Logo.png" alt="alt Isotipo Star+ estrella" style="max-width: 50px;">
-                    R+
-                </h1>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <img src="https://www.lavanguardia.com/files/image_948_465/uploads/2019/12/19/5fa532b42e408.jpeg"
-                    alt="los simpsons bart skinner escuela" style="max-width: 400px; width: 100%; margin: 20px 20px;">
-            </td>
-        </tr>
-        <td>
-            <h4 class="titulo_evento">
-                Dia del estudiante en la escuela primaria de Sprinfield
-            </h4>
+      <!-- Header -->
+      <tr>
+        <td
+          style="background-color: #230321; padding: 15px; text-align: center"
+        >
+          <h1>
+            ST<img
+              src="https://i.postimg.cc/RFhzf036/Star-Logo.png"
+              alt="alt Isotipo Star+ estrella"
+              style="max-width: 50px"
+            />R+
+          </h1>
         </td>
-        <tr>
-            <td>
-                <h5 class="descripcion_evento">
-                    Los mejores episodios junto al director Skinner
-                </h5>
-            </td>
-        <tr>
-            <td>
-                <h5 class="button_votar">Vota ahora!</h5>
-            </td>
-        </tr>
-        </tr>
+      </tr>
+      <!-- Campañas -->
+      <tr>
+        <td>
+          <img
+            src="https://www.lavanguardia.com/files/image_948_465/uploads/2019/12/19/5fa532b42e408.jpeg"
+            alt="los simpsons bart skinner escuela"
+            style="max-width: 400px; width: 100%; margin: 20px 20px"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4 class="titulo_evento">
+            Dia del estudiante en la escuela primaria de Sprinfield
+          </h4>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h5 class="descripcion_evento">
+            Los mejores episodios junto al director Skinner
+          </h5>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h5 class="button_votar">Vota ahora!</h5>
+        </td>
+      </tr>
+      <!-- Footer  -->
+      <tr>
+        <td style="background-color: #000; padding: 15px; text-align: center">
+          <h1>
+            ST<img
+              src="https://i.postimg.cc/RFhzf036/Star-Logo.png"
+              alt="alt Isotipo Star+ estrella"
+              style="max-width: 50px"
+            />R+
+          </h1>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4 class="titulo_footer">Siguenos</h4>
+        </td>
+      </tr>
+      <!-- Redes -->
+      <tr>
+        <td>
+            <img class="redes" src="https://i.postimg.cc/wMkqYZYp/intagram-logo.png" alt="logo instagram" srcset="">
+            <img class="redes" src="https://i.postimg.cc/jjGdHy4G/facebook-logo.png" alt="logo facebook" srcset="">
+            <img class="redes" src="https://i.postimg.cc/Y2NqFGGs/twitter-logo.png" alt="logo twitter" srcset="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4>Para obtener mas informacion, visita el centro de ayuda.</h4>
+          Política de privacidad - Términos de uso - Publicidad personalizada
+        </td>
+      </tr>
+      <tr>
+        <td class="terminosFooter">
+                En Disney respetamos tu privacidad. Estás recibiendo esta comunicación por haberte registrado y <br>
+                aceptado recibir actualizaciones, ofertas especiales y otra información de Star+ y de la Familia de<br>
+                Compañías Walt Disney. Star+ es un servicio por suscripción de pago, sujeto a términos y <br>
+                condiciones.<br>
+                <br>
+                Si quieres dejar de recibir estas comunicaciones, cancela o actualiza tus preferencias de correo <br>
+                electrónico. Por favor, no respondas a este mensaje. Esta dirección no acepta correos electrónicos,<br>
+                por lo que no recibirás respuesta.<br>
+                <br>
+                © 2022 Disney y su familia de compañías afiliadas. Todos los derechos reservados. 
+        </td>
+      </tr>
     </table>
-</body>
-
+  </body>
 </html>
