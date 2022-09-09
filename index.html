@@ -1,44 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StarPlus</title>
     <style>
-        body{
-            
+        @import url('//db.onlinewebfonts.com/c/f940f28d4cd3e9e610ef07217f115995?family=Neuzeit+Grotesk+Ligth');
+        @import url('//db.onlinewebfonts.com/c/180ca1285125dca23ad9e2112675649c?family=Neuzeit+Grotesk+Condense');
+        @import url('//db.onlinewebfonts.com/c/d533392fb39dbacb39fc446b4f055b4d?family=Neuzeit+Grotesk+Black');
+        @import url('//db.onlinewebfonts.com/c/b4cea26b49cad4a6e13b8c5218a39213?family=Neuzeit+Grotesk+Bold');
+        @import url('//db.onlinewebfonts.com/c/24ee22b1aca25a7d83f28d63c4093f8e?family=Neuzeit+Grotesk+Regular');
+
+        body {
+            background-color: #242425;
         }
+
         h1 {
             color: #EBE9F0;
             text-align: center;
-
+            font-family: 'Neuzeit Grotesk Black';
         }
+
         table {
             background-color: #E0DAF5;
             margin: auto;
             min-width: 650px;
         }
+
         td {
             text-align: center;
         }
 
+        table .titulo_evento {
+            font-family: 'Neuzeit Grotesk';
+            text-transform: uppercase;
+            width: 50%;
+            margin: auto;
+        }
+
+        table .descripcion_evento {
+            font-family: 'Neuzeit Grotesk Ligth';
+            width: 50%;
+            padding: 20px;
+            margin: auto;
+        }
+
+        table .button_votar{
+            display: inline-block;
+            background-color: #FA1B54;
+            width: 40%;
+            margin-top: 5px;
+            padding: 12px;
+            text-transform: uppercase;
+            font-family: 'Neuzeit Grotesk';
+            letter-spacing: 2px;
+            border-radius: 10px;
+            border: 1px solid black;
+        }
+
+        
     </style>
 </head>
+
 <body>
     <table>
         <tr>
-            <td style="background-color: #230321; padding: 15px; text-align: center;" >
-                <h1>STAR+</h1>
-            </td>
-        </tr>  
-        <tr>
-            <td>
-                <img src="https://www.lavanguardia.com/files/image_948_465/uploads/2019/12/19/5fa532b42e408.jpeg" 
-                alt="los simpsons bart skinner escuela"
-                style="max-width: 400px; width: 100%; margin: 20px 20px;">
+            <td style="background-color: #230321; padding: 15px; text-align: center;">
+                <h1 style="font-size: 56px; letter-spacing: 3px; margin: 0;">ST<img
+                        src="https://i.imgur.com/8yoaPb7.png" alt="alt Isotipo Star+ estrella" style="max-width: 50px;">R+</h1>
             </td>
         </tr>
-    </table>  
+        <tr>
+            <td>
+                <img src="https://www.lavanguardia.com/files/image_948_465/uploads/2019/12/19/5fa532b42e408.jpeg"
+                    alt="los simpsons bart skinner escuela" style="max-width: 400px; width: 100%; margin: 20px 20px;">
+            </td>
+        </tr>
+        <td>
+            <h4 class="titulo_evento">
+                Dia del estudiante en la escuela primaria de Sprinfield
+            </h4>
+        </td>
+        <tr>
+            <td>
+                <h5 class="descripcion_evento">
+                    Los mejores episodios junto al director Skinner
+                </h5>
+            </td>
+        <tr>
+            <td>
+                <h5 class="button_votar">Vota ahora!</h5>
+            </td>
+        </tr>
+        </tr>
+    </table>
 </body>
+
 </html>
