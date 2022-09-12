@@ -1,44 +1,304 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StarPlus</title>
-    <style>
-        body{
-            
-        }
-        h1 {
-            color: #EBE9F0;
-            text-align: center;
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>StarPlus</title>
+  <style>
+    @import url("//db.onlinewebfonts.com/c/f940f28d4cd3e9e610ef07217f115995?family=Neuzeit+Grotesk+Ligth");
+    @import url("//db.onlinewebfonts.com/c/180ca1285125dca23ad9e2112675649c?family=Neuzeit+Grotesk+Condense");
+    @import url("//db.onlinewebfonts.com/c/d533392fb39dbacb39fc446b4f055b4d?family=Neuzeit+Grotesk+Black");
+    @import url("//db.onlinewebfonts.com/c/b4cea26b49cad4a6e13b8c5218a39213?family=Neuzeit+Grotesk+Bold");
+    @import url("//db.onlinewebfonts.com/c/24ee22b1aca25a7d83f28d63c4093f8e?family=Neuzeit+Grotesk+Regular");
 
-        }
-        table {
-            background-color: #E0DAF5;
-            margin: auto;
-            min-width: 650px;
-        }
-        td {
-            text-align: center;
-        }
+    body {
+      background-color: #242425;
+    }
 
-    </style>
+    h1 {
+      color: #ebe9f0;
+      text-align: center;
+      font-family: "Neuzeit Grotesk Black";
+      font-size: 56px;
+      letter-spacing: 3px;
+      margin: 0;
+    }
+
+    table {
+      background-color: #e0daf5;
+      margin: auto;
+      min-width: 650px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    table .titulo_evento {
+      font-family: "Neuzeit Grotesk Bold";
+      text-transform: uppercase;
+      width: 50%;
+      margin: auto;
+      font-weight: 700;
+    }
+
+    table .descripcion_evento {
+      font-family: "Neuzeit Grotesk Ligth";
+      width: 50%;
+      padding: 20px;
+      margin: auto;
+      font-weight: 700;
+
+    }
+
+    table .button_votar {
+      display: inline-block;
+      background-color: #fa1b54;
+      width: 40%;
+      margin-top: 5px;
+      padding: 12px;
+      text-transform: uppercase;
+      font-family: "Neuzeit Grotesk Bold";
+      letter-spacing: 2px;
+      border-radius: 10px;
+      border: 1px solid black;
+      font-weight: 700;
+
+    }
+
+    table .redes {
+      max-width: 50px;
+    }
+    table .sugerencias {
+      width: 137px;
+      height: 200px;
+      margin: 40px 20px 20px 20px;
+    }
+
+    table .tablaSugerencias{
+
+      background-color: #262626 ;
+      text-align: center;
+    }
+
+    table .textoSugerencias{
+      text-align: center;
+      color: #ebe9f0;
+      font-family: "Neuzeit Grotesk Regular";
+      width: 70%;
+      margin: auto;
+
+    }
+    
+    table .redesInstagram {
+      max-width: 46px;
+      margin-bottom: 2px;
+    }
+
+    table .titulo_footer {
+      font-family: "Neuzeit Grotesk Regular";
+      margin: 20px auto;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 25px;
+      line-height: 19px;
+      align-items: center;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+
+    table .descripcionFooter {
+      font-family: "Neuzeit Grotesk Bold";
+    }
+
+    table .terminosFooter {
+      font-family: "Neuzeit Grotesk Regular";
+      font-weight: 400;
+      font-size: 15px;
+      width: 400px;
+      height: 123px;
+      text-align: left;
+      padding: 15.13px 45.37px;
+    }
+
+    table .textDisney {
+      font-weight: 400;
+      font-size: 14px;
+      margin: 18px 0 0;
+    }
+
+   /*  .contenedor-imagenes {
+            display: flex;
+        } */
+
+   /*  .contenedor-imagenes img:first-child {
+
+          margin-right: 10px;
+          max-width: 50%;
+    } */
+
+  </style>
 </head>
+
 <body>
-    <table>
-        <tr>
-            <td style="background-color: #230321; padding: 15px; text-align: center;" >
-                <h1>STAR+</h1>
-            </td>
-        </tr>  
-        <tr>
-            <td>
-                <img src="https://www.lavanguardia.com/files/image_948_465/uploads/2019/12/19/5fa532b42e408.jpeg" 
-                alt="los simpsons bart skinner escuela"
-                style="max-width: 400px; width: 100%; margin: 20px 20px;">
-            </td>
-        </tr>
-    </table>  
+  <table>
+    <!-- Header -->
+    <tr>
+      <td style="background-color: #230321; padding: 15px; text-align: center">
+        <h1>
+          ST<img 
+            src="https://i.postimg.cc/RFhzf036/Star-Logo.png" 
+            alt="Isotipo Star+ estrella"
+            style="max-width: 50px" />R+
+        </h1>
+      </td>
+    </tr>
+    <!-- Evento 1 -->
+    <tr>
+      <td>
+        <img 
+          src="https://i.postimg.cc/tJGxCKsk/bart-Skinner-No-Molestar.jpg" 
+          alt="los simpsons bart skinner escuela"
+          style="max-width: 500px; width: 100%; margin: 20px 20px;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="titulo_evento">
+          Dia del estudiante en la escuela primaria de Sprinfield
+        </h4>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h5 class="descripcion_evento">
+          Los mejores episodios junto al director Skinner
+        </h5>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h5 class="button_votar">
+          Vota ahora!
+        </h5>
+      </td>
+    </tr>
+    <!-- Evento 2 -->
+    <tr>
+      <td>
+        <img 
+          src="https://i.postimg.cc/d1JQS5dD/Los-Simpson-Halloween-No-Molestar.jpg" 
+          alt="los simpsons halloween"
+          style="max-width: 500px; width: 100%; margin: 20px 20px;">
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h4 class="titulo_evento">
+          La casita del horror de los Simpson
+        </h4>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h5 class="descripcion_evento">
+          Todas las temporadas!
+        </h5>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <h5 class="button_votar">
+          Vota ahora!
+        </h5>
+      </td>
+    </tr>
+    <!-- Eventos sugeridos -->
+  </table>
+    <table style="background-color: #262626;">
+     <tr>
+       <td>
+          <img class="sugerencias"
+              src="https://i.postimg.cc/fbTbq1vP/what-we-do-in-the-shadows.jpg" 
+              alt="what we do in shadows serie">
+          <img class="sugerencias"
+              src="https://i.postimg.cc/RZTFRvwf/little-folkers.jpg" 
+              alt="how i met your father serie">
+          <img class="sugerencias"
+              src="https://i.postimg.cc/W1VzgdqT/how-i-met-your-father.jpg" 
+              alt="little fockers pelicula">
+       </td> 
+     </tr> 
+        <td >
+          <h2 class="textoSugerencias" >Tenemos series y películas hechas a tu medida.¡No te las pierdas!</h2>
+        </td>
+     <tr>
+
+     </tr>
+    </table>
+  <!-- Footer  -->
+  <table>  
+    <tr>
+      <td style="background-color: #000; padding: 1px; text-align: center">
+        <h1>
+          ST<img 
+            src="https://i.postimg.cc/RFhzf036/Star-Logo.png" 
+            alt="alt Isotipo Star+ estrella"
+            style="max-width: 50px" />R+
+        </h1>
+      </td>
+    </tr>
+    <table style="background-color: #EBE9F0 ;">
+      <tr>
+        <td>
+          <h4 class="titulo_footer">Síguenos</h4>
+        </td>
+      </tr>
+      <!-- Redes -->
+      <tr>
+        <td>
+          <img class="redes" 
+            src="https://i.postimg.cc/wMkqYZYp/intagram-logo.png" 
+            alt="logo instagram" 
+            srcset="">
+          <img class="redes" 
+            src="https://i.postimg.cc/jjGdHy4G/facebook-logo.png" 
+            alt="logo facebook" 
+            srcset="">
+          <img class="redes" 
+            src="https://i.postimg.cc/Y2NqFGGs/twitter-logo.png" 
+            alt="logo twitter" 
+            srcset="">
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <h4 class="descripcionFooter">
+            Para obtener más información, visita el Centro de Ayuda.
+          </h4>
+          <h5 style="font-weight: 400; font-family: 'Neuzeit Grotesk Regular'; font-size: 15.73px; margin-bottom: 0;">
+            Política de privacidad - Términos de uso - Publicidad personalizada
+          </h5>
+        </td>
+      </tr>
+      <tr>
+        <td class="terminosFooter">
+          En Disney respetamos tu privacidad. Estás recibiendo esta comunicación por haberte registrado y
+          aceptado recibir actualizaciones, ofertas especiales y otra información de Star+ y de la Familia de
+          Compañías Walt Disney. Star+ es un servicio por suscripción de pago, sujeto a términos y
+          condiciones.
+          <br><br>
+          Si quieres dejar de recibir estas comunicaciones, cancela o actualiza tus preferencias de correo
+          electrónico. Por favor, no respondas a este mensaje. Esta dirección no acepta correos electrónicos,
+          por lo que no recibirás respuesta.
+          <h6 class="textDisney">
+            &copy; 2022 Disney y su familia de compañías afiliadas. Todos los derechos reservados.
+          </h6>
+        </td>
+      </tr>
+    </table>
+  </table>
 </body>
 </html>
