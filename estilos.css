@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #262626;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 200px;
+}
+
+
+.contenedor{ 
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+}
+
+
+/* HEADER */
+
+
+header{
+    background: rgb(52,5,52);
+    background: linear-gradient(90deg, rgba(52,5,52,1) 0%, rgba(35,3,33,1) 50%, rgba(52,5,52,1) 100%);
+    color: whitesmoke;
+    min-height: 83px;
+}
+
+header a{
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: 19.63px;
+}
+
+header li{
+    display: inline;
+    float: left;
+    margin-right: 30px;
+}
+
+header #logo{
+    float: left;
+    margin-top: 7px;
+    max-width: 175px;
+    margin-left: 50px;
+}
+
+header nav{
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-left: 75px;
+}
+
+header .datosUsuario{
+    float: right;
+    font-size: 15px
+}
+
+/* Carrucel */
+
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.mySlides img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+ /* Continuar Viendo */
+#continuarViendo{
+
+  color: whitesmoke;
+}
+
+
+
+.card{
+  display: flex;
+  background-color: #230321;
+  max-height: 500px;
+  max-width: 800px;
+  margin: 100px;
+  color: whitesmoke;
+}
+.card img{
+  width: 50%;
+  object-fit: cover;
+}
+
+.cardContainer{
+
+}
