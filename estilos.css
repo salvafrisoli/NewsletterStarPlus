@@ -58,9 +58,27 @@ header nav{
     margin-left: 75px;
 }
 
+header nav img {
+  max-width: 20px;
+  margin-right: 5px;
+}
+
 header .datosUsuario{
-    float: right;
-    font-size: 15px
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+header .datosUsuario h2{
+    font-size: 20px;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+header .datosUsuario img {
+  width: 50px;
 }
 
 /* Carrucel */
@@ -149,7 +167,8 @@ header .datosUsuario{
 
  /* Continuar Viendo */
 #continuarViendo{
-
+  max-width: 90%;
+  margin: auto;
   color: whitesmoke;
 }
 
@@ -160,7 +179,7 @@ header .datosUsuario{
   background-color: #230321;
   max-height: 500px;
   max-width: 800px;
-  margin: 100px;
+  margin: 50px 80px 50px 0;
   color: whitesmoke;
 }
 .card img{
