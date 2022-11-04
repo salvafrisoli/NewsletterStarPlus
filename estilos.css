@@ -167,12 +167,10 @@ header .datosUsuario img {
 
  /* Continuar Viendo */
 #continuarViendo{
-  max-width: 90%;
-  margin: auto;
   color: whitesmoke;
+  max-width: 100%;
+  margin-left: 5%;
 }
-
-
 
 .card{
   display: flex;
@@ -184,18 +182,75 @@ header .datosUsuario img {
 }
 .card img{
   width: 50%;
+  min-height: 200px;
+  min-width: 300px;
   object-fit: cover;
 }
 
 .cardContainer{
-
+  min-width: 300px;
+  padding: 15px;
+  margin: auto 0;
 }
+
+.cardContainer h3, p{
+  margin-bottom: 10px;
+}
+
+progress {
+  accent-color: rgb(192, 5, 142);
+}
+
+mark {
+  color: #A5A0A0;
+  background-color: rgba(187, 187, 187, 0.304);
+}
+
+.cardContainer p {
+  color: #A5A0A0;
+}
+
+/* Recomendados */
+#recomendados{
+  margin-left: 5%;
+  margin-bottom: 50px;
+  color: whitesmoke;
+}
+
+#recomendados h1 {
+  color: whitesmoke;
+}
+
+.recomendado img{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+}
+
+.recomendado {
+  margin-top: 50px;
+  margin-right: 85px;
+}
+
+.recomendadoCard {
+  background-color: #230321;
+  padding: 15px 15px 5px 15px;
+}
+
+.recomendadoCard h3, p{
+  margin-bottom: 10px;
+}
+
 /* DESTACADO*/
+#destacados{
+  margin-left: 5%;
+}
+
 .destacado{
   display: flex;
-  margin-left: 85px;
+  margin-top: 50px;
   margin-right: 85px;
-  margin-bottom: 100px;
 }
 .destacado img {
   width: 300px;
@@ -203,9 +258,6 @@ header .datosUsuario img {
   object-fit:cover;
 }
 
-
 #destacadosTitulo {
   color: whitesmoke;
-  margin: 25px 0 50px 100px;
-
 }
