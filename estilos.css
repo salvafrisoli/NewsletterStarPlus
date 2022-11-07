@@ -81,7 +81,7 @@ header .datosUsuario img {
   width: 50px;
 }
 
-/* Carrucel */
+/* Carrousel */
 
 .slideshow-container {
   max-width: 100%;
@@ -230,7 +230,7 @@ mark {
 
 .recomendado {
   margin-top: 50px;
-  margin-right: 85px;
+  margin-right: 120px;
 }
 
 .recomendadoCard {
@@ -245,19 +245,60 @@ mark {
 /* DESTACADO*/
 #destacados{
   margin-left: 5%;
+  margin-bottom: 3%;
 }
 
 .destacado{
   display: flex;
   margin-top: 50px;
-  margin-right: 85px;
+  margin-right: 120px;
 }
 .destacado img {
-  width: 100%;
-  height: 100%;
+  width: 300px;
+  height: 200px;
   object-fit:cover;
 }
 
 #destacadosTitulo {
   color: whitesmoke;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  background-color: #3f3e3e56;
+  color: #bbb;
+  font-size: 15px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer img{
+  width: 100px;
+}
+
+footer p {
+  margin: 15px 0;
+}
+
+#alumnos {
+  display: flex;
+  justify-content: center;
+}
+
+.alumno {
+  margin: 7px 10px;
+}
+
+.alumno a{
+  text-decoration: none;
+  color: #bbb;
+}
+
+.alumno a:hover{
+  text-decoration: none;
+  color: #f2f2f2;
 }
