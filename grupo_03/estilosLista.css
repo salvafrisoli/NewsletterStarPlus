@@ -15,3 +15,5 @@
     border-color: white;
     font-size: 40px;    
 }
+
+.inputBuscador::placeholder { color: white; }

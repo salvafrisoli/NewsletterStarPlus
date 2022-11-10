@@ -7,15 +7,14 @@
 
     <meta name="description" content="Trabajo practico final grupal para la materia Diseño y Desarrollo WEB de UADE 2022, sitio web con 3 secciones y 4 subsecciones sobre la marca Star+ que permite ver contenido de Los Simpsons, todas sus temporadas y capitulos haciendo foco en los eventos principales de Halloween, Navidad, Vacaciones y Dia del Estudiante">
 
-    <meta name="keywords" content="trabajo practico final grupal, diseño, desarrollo web, uade, 2022, listado ,los simpson, navidad, halloween, dia de estudiante, vacaciones, viajes, escuela, christmas">
+    <meta name="keywords" content="trabajo practico final grupal, diseño, desarrollo web, uade, 2022, los simpsons, navidad, halloween, dia de estudiante, vacaciones, viajes, escuela, christmas">
 
     <meta property="og:image" content="./img/los_simpsons_navidad_NM.png">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="estilosLista.css">
     
-    <title>Listado Star+</title>
+    <title>Trabajo Grupal Star+</title>
 </head>
 <body>
     <header>
@@ -27,7 +26,7 @@
                 <!-- NAVBAR - ACCESOS Y LOGO STAR -->
                 <ul>
                     <li> <img src="img/home.png" alt=""> <a href="">  INICIO</a> </li>
-                    <li><a href=""> <img src="img/lupa.png" alt=""> BÙSQUEDA</a></li>
+                    <li><a href="listado.html"> <img src="img/lupa.png" alt=""> BÙSQUEDA</a></li>
                     <li><a href=""> <img src="img/plus.png" alt=""> MI LISTA</a></li>
                     <li><a href=""> <img src="img/estrella.png" alt=""> EVENTOS</a></li>
                 </ul>
@@ -41,19 +40,63 @@
         </div>
     </header>
 
-    <br>
-
-    <div class="buscador">
-        <form role="form">
-            <div>
-                <input type="text" class="inputBuscador" placeholder="Titulo o Temporada">
+    <section id="carrousel">   
+        <!-- Seccion Carrucel -->
+        <div class="slideshow-container">
+            
+            <div class="mySlides fade">
+                <img src="img/img1.png">
             </div>
-        </form>
-    </div>
+            
+            <div class="mySlides fade">
+                <img src="img/img2.png">
+            </div>
+            
+            <div class="mySlides fade">
+                <img src="img/img3.png">
+            </div>
+            
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- The dots/circles -->
+        <div class="" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+    </section>
+
+    <section id="continuarViendo">
+        <h1>Continuar Viendo</h1>
+        <div class="contenedor">
+            <div class="card">
+                <img src="img/simpson-navidad.png" alt="imagen de los simpson navidad">
+                <div class="cardContainer">
+                    <h3>La casita del horror IV</h3>
+                    <p><mark><b>12+</b></mark> El diablo y Homero Simpson</p>
+                    <progress id="time" max="100" value="9"></progress>
+                    <p>24 min por ver</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="img/simpson-navidad.png" alt="imagen de los simpson navidad">
+                <div class="cardContainer">
+                    <h3>Especial vacaciones</h3>
+                    <p><mark><b>10+</b></mark> De viaje por Miami</p>
+                    <progress id="time" max="100" value="50"></progress>
+                    <p>15 min por ver</p>
+                </div>
+            </div>
+        </div>
+        
+    </section>
 
     <section id="recomendados">
         <!-- Recomendado -->
-        <h1>Mas populares</h1>
+        <h1>Recomendados para vos</h1>
         <div class="contenedor">
 
             <div class="recomendado">
@@ -90,98 +133,47 @@
             </div>
         </div>
     </section>
-
+    <section id="destacados">
+        <h1 id="destacadosTitulo">Destacados de Star+</h1>
+        <!-- Destacados -->
+        <div class="contenedor">
+            <div class="destacado">
+                <img src="img/456bg6bg.png" alt="los sinson">
+            </div>
+            <div class="destacado">
+                <img src="img/222.png" alt="los sinson">
+            </div>
+            <div class="destacado">
+                <img src="img/444.png" alt="los sinson">
+            </div>
+            <div class="destacado">
+                <img src="img/45n3.png" alt="los sinson">
+            </div>
+        </div>
+        <div class="contenedor">
+            <div class="destacado">
+                <img src="img/fdsghn.png" alt="los sinson">
+            </div>
+            <div class="destacado">
+                <img src="img/8F02.png" alt="los sinson">
+            </div>
+            <div class="destacado">
+                <img src="img/555.png" alt="los sinson">
+            </div>
+            <div class="destacado">
+                <img src="img/b3546g5b346.png" alt="los sinson">
+            </div>
+        </div>
+    </section>
     
-    <section id="recomendados">
-        <!-- Recomendado -->
-        <h1>Agregados Recientemente</h1>
-        <div class="contenedor">
-
-            <div class="recomendado">
-                <img src="img/456bg6bg.png" alt="los simpsons temporada 10 capitulo 15">
-                <div class="recomendadoCard">
-                    <h3>Los Simpsons</h3>
-                    <p>Temporada X</p>
-                    <p>Capitulo XV</p>
-                </div>
-            </div>
-            <div class="recomendado">
-                <img src="img/222.png" alt="los simpsons temporada 10 capitulo 16">
-                <div class="recomendadoCard">
-                    <h3>Los Simpsons</h3>
-                    <p>Temporada X</p>
-                    <p>Capitulo XVI</p>
-                </div>
-            </div>
-            <div class="recomendado">
-                <img src="img/444.png" alt="los simpsons temporada 10 capitulo 17">
-                <div class="recomendadoCard">
-                    <h3>Los Simpsons</h3>
-                    <p>Temporada X</p>
-                    <p>Capitulo XVII</p>
-                </div>
-            </div>
-            <div class="recomendado">
-                <img src="img/45n3.png" alt="los simpsons temporada 10 capitulo 18">
-                <div class="recomendadoCard">
-                    <h3>Los Simpsons</h3>
-                    <p>Temporada X</p>
-                    <p>Capitulo XVIII</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
-    <section id="recomendados">
-        <!-- Recomendado -->
-        <h1>Recomendaciones de fin de semana</h1>
-        <div class="contenedor">
-
-            <div class="recomendado">
-                <img src="img/456bg6bg.png" alt="los simpsons temporada 10 capitulo 15">
-                <div class="recomendadoCard">
-                    <h3>Los Simpsons</h3>
-                    <p>Temporada X</p>
-                    <p>Capitulo XV</p>
-                </div>
-            </div>
-            <div class="recomendado">
-                <img src="img/222.png" alt="los simpsons temporada 10 capitulo 16">
-                <div class="recomendadoCard">
-                    <h3>Los Simpsons</h3>
-                    <p>Temporada X</p>
-                    <p>Capitulo XVI</p>
-                </div>
-            </div>
-            <div class="recomendado">
-                <img src="img/444.png" alt="los simpsons temporada 10 capitulo 17">
-                <div class="recomendadoCard">
-                    <h3>Los Simpsons</h3>
-                    <p>Temporada X</p>
-                    <p>Capitulo XVII</p>
-                </div>
-            </div>
-            <div class="recomendado">
-                <img src="img/45n3.png" alt="los simpsons temporada 10 capitulo 18">
-                <div class="recomendadoCard">
-                    <h3>Los Simpsons</h3>
-                    <p>Temporada X</p>
-                    <p>Capitulo XVIII</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
     <footer>
         <a href="https://www.webcampus.uade.edu.ar/Login.aspx" target="_blank" rel="noopener noreferrer"><img src="./img/LogoUADE.png" alt="logotipo UADE universidad argentina de la empresa"></a>
         <div id="alumnos">
             <div class="alumno">
-                <a href="https://www.linkedin.com/in/kaypedrozo/" target="_blank" rel="noopener noreferrer">Frisoli Salvador</a>
+                <a href="https://www.linkedin.com/in/salvador-frisoli-pirc-576092244" target="_blank" rel="noopener noreferrer">Frisoli Salvador</a>
             </div>
             <div class="alumno">
-                <a href="https://www.linkedin.com/in/julian-labissier-falcon-bb88991b9/" target="_blank" rel="noopener noreferrer">Labissier Julian</a>
+                <a href="https://www.linkedin.com/in/julian-labissier/" target="_blank" rel="noopener noreferrer">Labissier Julian</a>
             </div>
             <div class="alumno">
                 <a href="https://www.linkedin.com/in/kaypedrozo/" target="_blank" rel="noopener noreferrer">Pedrozo Kayla</a>
