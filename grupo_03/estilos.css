@@ -1,10 +1,12 @@
 * {
     margin: 0;
     padding: 0;
+  
 }
 
 body{
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Neuzeit_bold';
     padding: 0;
     margin: 0;
     background-color: #262626;
@@ -22,6 +24,35 @@ body{
     position: relative;
 }
 
+
+@font-face {
+  font-family: 'Neuzeit_lighter';
+  src: url('./Font_Neuzeit_Star/NeuzeitGro-Lig.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: lighter;
+}
+
+
+@font-face {
+  font-family: 'Neuzeit_bold';
+  src: url('./Font_Neuzeit_Star/NeuzeitGro-Bla.ttf') format('truetype'); 
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Neuzeit_normal';
+  src: url('./Font_Neuzeit_Star/NeuzeitGro-Reg.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Neuzeit';
+  src: url('./Font_Neuzeit_Star/NeuzeitGroCon-Bla.ttf') format('truetype');
+  font-style: normal;
+  font-weight: bolder;
+}
 
 /* HEADER */
 
@@ -305,4 +336,22 @@ footer p {
 .alumno a:hover{
   text-decoration: none;
   color: #f2f2f2;
+}
+
+footer .redes {
+  max-width: 15px;
+}
+
+/* Mi lista */
+
+#tituloMiLista {
+  margin-top: 40px;
+}
+
+.mi_lista {
+  margin-top: 20px !important;
+}
+
+.subtituloMiLista{
+  margin-top: 20px;
 }
