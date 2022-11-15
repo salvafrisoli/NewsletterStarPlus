@@ -91,6 +91,7 @@ header .datosUsuario img {
 
 .mySlides {
   display: none;
+  margin: auto;
 }
 
 .mySlides img{
@@ -218,6 +219,8 @@ mark {
   color: whitesmoke;
 }
 
+
+
 #recomendados h1 {
   color: whitesmoke;
 }
@@ -267,7 +270,7 @@ mark {
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 20px 0px;
   margin-top: 20px;
   background-color: #3f3e3e56;
   color: #bbb;
