@@ -17,3 +17,9 @@
 }
 
 .inputBuscador::placeholder { color: white; }
+
+.mySlidesPopulares, .mySlidesRecientemente, .mySlidesRecomendaciones{
+    display: none;
+    margin: auto;
+}
+  
