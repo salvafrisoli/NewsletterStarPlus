@@ -1,22 +1,22 @@
 let slideIndex = 1;
-showSlides(slideIndex);
+showSlides(slideIndex,"mySlidesSinReproducir");
+showSlides(slideIndex,"mySlidesReproducidos");
 
-function plusSlides(n) {
-  showSlides(slideIndex += n);
+function plusSlides(n, className) {
+  showSlides(slideIndex += n, className);
 }
 
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+function showSlides(n,className) {
   let i;
-  let slides = document.getElementsByClassName("mySlides");
+  let slides = document.getElementsByClassName(className);
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";  
   }
-
   slides[slideIndex-1].style.display = "flex";  
 }
