@@ -337,3 +337,17 @@ footer p {
 footer .redes {
   max-width: 15px;
 }
+
+/* Mi lista */
+
+#tituloMiLista {
+  margin-top: 40px;
+}
+
+.mi_lista {
+  margin-top: 20px !important;
+}
+
+.subtituloMiLista{
+  margin-top: 20px;
+}
