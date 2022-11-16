@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Trabajo practico final grupal para la materia Diseño y Desarrollo WEB de UADE 2022, sitio web con 3 secciones y 4 subsecciones sobre la marca Star+ que permite ver contenido de Los Simpsons, todas sus temporadas y capitulos haciendo foco en los eventos principales de Halloween, Navidad, Vacaciones y Dia del Estudiante">
+
+    <meta name="keywords" content="trabajo practico final grupal, diseño, desarrollo web, uade, 2022, listado ,los simpson, navidad, halloween, dia de estudiante, vacaciones, viajes, escuela, christmas">
+
+    <meta property="og:image" content="../img/los_simpsons_navidad_NM.png">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="../estilos.css">
+    <link rel="stylesheet" href="estilosEventos.css">
+    
+    
+    <title>Listado Star+</title>
+</head>
+<body>
+    <header>
+        <div class="contenedor">
+            <div>
+                <img id="logo" src="../img/STAR.png" alt="logo de star+ la marca piolita de ver pelis. jaja">
+            </div>
+            <nav>
+                <!-- NAVBAR - ACCESOS Y LOGO STAR -->
+                <ul>
+                    <li><a href="../index.html"> <img src="../img/home.png" alt="icono casa simbolizando inicio"> INICIO</a> </li>
+                    <li><a href="../busquedas.html"> <img src="../img/lupa.png" alt="icono lupa simbolizando busquedas"> BÙSQUEDA</a></li>
+                    <li><a href="../listado.html"> <img src="../img/plus.png" alt="icono simbolo más lleva a lista personalizada"> MI LISTA</a></li>
+                    <li><a href="../eventos.html"> <img src="../img/estrella.png" alt="icono estrella redirige a eventos del sitio web"> EVENTOS</a></li>
+                </ul>
+            </nav>
+            <div class="datosUsuario">
+                <!-- DATOS USUARIO -->
+                <h2>Usuario</h2>
+                <img src="../img/img_usuario.png" alt="">
+            </div>
+        </div>
+    </header>
+
+    <section id="evento">
+        <div class="contenedorEvento">
+            <h1>Especial Halloween</h1>
+        </div>
+    </section>
+
+    <section id="recomendados">
+        <!-- Destacados -->
+        <!-- <h1 id="tituloMiLista">Mi lista</h1>
+        <h3 class="subtituloMiLista">Destacados</h3>
+        <div class="contenedor">
+            <div class="mySlidesSinReproducir margin_auto">
+                <div class="recomendado mi_lista">
+                    <img src="../img/456bg6bg.png" alt="los simpsons temporada 10 capitulo 15">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XV</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/222.png" alt="los simpsons temporada 10 capitulo 16">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVI</p>
+                    </div>
+                </div> 
+                <div class="recomendado mi_lista">
+                    <img src="../img/444.png" alt="los simpsons temporada 10 capitulo 17">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVII</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/45n3.png" alt="los simpsons temporada 10 capitulo 18">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVIII</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlidesSinReproducir margin_auto">
+                <div class="recomendado mi_lista">
+                    <img src="../img/45n3.png" alt="los simpsons temporada 10 capitulo 18">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVIII</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/444.png" alt="los simpsons temporada 10 capitulo 17">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVII</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/456bg6bg.png" alt="los simpsons temporada 10 capitulo 15">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XV</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/222.png" alt="los simpsons temporada 10 capitulo 16">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVI</p>
+                    </div>
+                </div> 
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 'mySlidesSinReproducir')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'mySlidesSinReproducir')">&#10095;</a>
+        </div>
+</section> 
+
+<section id="recomendados"> -->
+        <!-- Todos los capitulos  -->
+        <!-- <h3 class="subtituloMiLista">Todos los capitulos</h3>
+        <div class="contenedor">
+            <div class="mySlidesReproducidos margin_auto">
+                <div class="recomendado mi_lista">
+                    <img src="../img/456bg6bg.png" alt="los simpsons temporada 10 capitulo 15">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XV</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/222.png" alt="los simpsons temporada 10 capitulo 16">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVI</p>
+                    </div>
+                </div> 
+                <div class="recomendado mi_lista">
+                    <img src="../img/444.png" alt="los simpsons temporada 10 capitulo 17">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVII</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/45n3.png" alt="los simpsons temporada 10 capitulo 18">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVIII</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mySlidesReproducidos margin_auto">
+                <div class="recomendado mi_lista">
+                    <img src="../img/45n3.png" alt="los simpsons temporada 10 capitulo 18">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVIII</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/444.png" alt="los simpsons temporada 10 capitulo 17">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVII</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/456bg6bg.png" alt="los simpsons temporada 10 capitulo 15">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XV</p>
+                    </div>
+                </div>
+                <div class="recomendado mi_lista">
+                    <img src="../img/222.png" alt="los simpsons temporada 10 capitulo 16">
+                    <div class="recomendadoCard">
+                        <h3>Los Simpsons</h3>
+                        <p>Temporada X</p>
+                        <p>Capitulo XVI</p>
+                    </div>
+                </div> 
+            </div>
+            <a class="prev" onclick="plusSlides(-1, 'mySlidesReproducidos')">&#10094;</a>
+            
+            <a class="next" onclick="plusSlides(1, 'mySlidesReproducidos')">&#10095;</a>
+        </div>
+</section> 
+
+
+
+    <footer>
+        <a href="https://www.webcampus.uade.edu.ar/Login.aspx" target="_blank" rel="noopener noreferrer"><img src="../img/LogoUADE.png" alt="logotipo UADE universidad argentina de la empresa"></a>
+        <div id="alumnos">
+            <div class="alumno">
+                <a href="https://www.linkedin.com/in/salvador-frisoli-pirc-576092244" target="_blank" rel="noopener noreferrer"> <img class="redes" src="../img/logo_linkedin.png" alt="icono linkedin"> Frisoli Salvador</a>
+            </div>
+            <div class="alumno">
+                <a href="https://www.linkedin.com/in/julian-labissier/" target="_blank" rel="noopener noreferrer"> <img class="redes" src="../img/logo_linkedin.png" alt="icono linkedin"> Labissier Julian</a>
+            </div>
+            <div class="alumno">
+                <a href="https://www.linkedin.com/in/kaypedrozo/" target="_blank" rel="noopener noreferrer"> <img class="redes" src="../img/logo_linkedin.png" alt="icono linkedin"> Pedrozo Kayla</a>
+            </div>
+        </div>
+        <p>Entrega: <i>24/11/2022</i> - Profesor: David Ernesto Ayala Velarde</p>
+        <p>Diseño y Desarrollo Web - Universidad Argentina de la Empresa</p>
+        <p>copyright &copy; 2022</p>
+    </footer>
+    
+    <script src="../miLista.js"></script> -->
+</body>
+</html>

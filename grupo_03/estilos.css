@@ -359,3 +359,21 @@ footer .redes {
 .margin_auto {
   margin: auto;
 }
+
+/**/
+#evento{
+  display: flex;
+  min-height: 700px;
+  background-image: url(img/halloween-wallpapers-los-simpson2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#evento h1{
+  margin: 25% 0 0 10%;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-size: 70px;
+
+}
+
