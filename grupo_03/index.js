@@ -25,3 +25,8 @@ function showSlides(n,className) {
 
   dots[slideIndex-1].className += " active";
 }
+
+
+const params = (new URL(location)).searchParams;
+debugger
+params.get('search')
