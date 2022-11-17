@@ -368,13 +368,26 @@ hr{
 #portada_reproductor {
   display: flex;
   flex-direction: column;
-  background-image: url(./img/simpson-navidad.png);
+  align-items: flex-start;
+  background-image: url(./img/img_reproductor.jpg);
   height: 500px;
   background-size: cover;
-  padding: 0 20px;
+  padding: 40px 80px;
   color: whitesmoke;
 }
 
 #portada_reproductor img {
   max-height: 120px;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+#portada_reproductor button{
+  margin-bottom: 30px;
+  padding: 15px 25px;
+  border-radius: 5px;
+}
+
+#portada_reproductor p {
+  font-size: 20px;
 }
