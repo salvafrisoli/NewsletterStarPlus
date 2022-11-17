@@ -360,20 +360,71 @@ footer .redes {
   margin: auto;
 }
 
-/**/
-#evento{
+/*Evento*/
+
+#eventoHalloween{
   display: flex;
   min-height: 700px;
   background-image: url(img/halloween-wallpapers-los-simpson2.jpg);
   background-size: cover;
   background-position: center;
 }
-#evento h1{
+#eventoHalloween h1{
   margin: 25% 0 0 10%;
   flex-direction: column-reverse;
   align-items: center;
   color: white;
   font-size: 70px;
+  text-shadow: 0px 0px 25px black;
+
+}
+
+#eventoNavidad{
+  display: flex;
+  min-height: 700px;
+  background-image: url(img/1873960.jpg);
+  background-size: cover;
+  background-position:top;
+}
+#eventoNavidad h1{
+  margin: 25% 0 0 10%;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-size: 70px;
+  text-shadow: 0px 0px 25px gray;
+
+}
+#eventoVacaciones{
+  display: flex;
+  min-height: 700px;
+  background-image: url(img/Los-Simpson-Wallpapers-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#eventoVacaciones h1{
+  margin: 25% 0 0 10%;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-size: 70px;
+  text-shadow: 0px 0px 25px black;
+
+}
+#eventoEscuela{
+  display: flex;
+  min-height: 700px;
+  background-image: url(img/232d64e61c73ad1ba144aef552a2f7c2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#eventoEscuela h1{
+  margin: 25% 0 0 10%;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-size: 60px;
+  text-shadow: 0px 0px 25px black;
 
 }
 
