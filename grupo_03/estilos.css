@@ -360,6 +360,7 @@ footer .redes {
   margin: auto;
 }
 
+
 /* Reproductor */
 hr{
   margin-top: 10px;
@@ -390,4 +391,99 @@ hr{
 
 #portada_reproductor p {
   font-size: 20px;
+}
+
+/*Evento*/
+
+#eventoHalloween{
+  display: flex;
+  min-height: 700px;
+  background-image: url(img/halloween-wallpapers-los-simpson2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#eventoHalloween h1{
+  margin: 25% 0 0 10%;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-size: 70px;
+  text-shadow: 0px 0px 25px black;
+
+}
+
+#eventoNavidad{
+  display: flex;
+  min-height: 700px;
+  background-image: url(img/1873960.jpg);
+  background-size: cover;
+  background-position:top;
+}
+#eventoNavidad h1{
+  margin: 25% 0 0 10%;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-size: 70px;
+  text-shadow: 0px 0px 25px gray;
+
+}
+#eventoVacaciones{
+  display: flex;
+  min-height: 700px;
+  background-image: url(img/Los-Simpson-Wallpapers-2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#eventoVacaciones h1{
+  margin: 25% 0 0 10%;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-size: 70px;
+  text-shadow: 0px 0px 25px black;
+
+}
+#eventoEscuela{
+  display: flex;
+  min-height: 700px;
+  background-image: url(img/232d64e61c73ad1ba144aef552a2f7c2.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#eventoEscuela h1{
+  margin: 25% 0 0 10%;
+  flex-direction: column-reverse;
+  align-items: center;
+  color: white;
+  font-size: 60px;
+  text-shadow: 0px 0px 25px black;
+}
+
+.contenedorBotones{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+	align-items: center;
+	align-content: stretch;
+  
+
+}
+.botonEvento{
+  margin-top: 100px;
+  text-align: center;
+  background-color: whitesmoke;
+  color: #230321;
+  font-size: 20px;
+  font-family: 'Neuzeit_bold';
+  width: 200px;
+  height: 200px;
+}
+.botonEvento p{
+  padding-top: 75px;
+}
+
+.contenedorBotones a{
+  text-decoration: 0;
 }
