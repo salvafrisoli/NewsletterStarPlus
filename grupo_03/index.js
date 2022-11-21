@@ -28,5 +28,5 @@ function showSlides(n,className) {
 
 
 const params = (new URL(location)).searchParams;
-debugger
+
 params.get('search')

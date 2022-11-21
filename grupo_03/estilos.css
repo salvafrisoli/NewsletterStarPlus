@@ -12,7 +12,13 @@ body{
     background-color: #262626;
     position: relative;
     min-height: 100vh;
-    padding-bottom: 200px;
+    /* padding-bottom: 200px; */
+    padding-bottom: 380px;
+    text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -76,11 +82,29 @@ header li{
     margin-right: 30px;
 }
 
+header li a:hover {
+  background-size: 100% 2px;
+}
+
+header li a{
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s;
+}
+
 header #logo{
     float: left;
     margin-top: 7px;
     max-width: 175px;
     margin-left: 50px;
+}
+
+header #logo:hover {
+  filter: drop-shadow(4px 1px 2px rgba(245, 245, 245, 0.437));
+
 }
 
 header nav{
@@ -184,6 +208,10 @@ header .datosUsuario img {
   transition: background-color 0.6s ease;
 }
 
+.dots{
+  margin-top: 10px;
+}
+
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -213,6 +241,11 @@ header .datosUsuario img {
   margin: 50px 80px 50px 0;
   color: whitesmoke;
 }
+
+.sombreado:hover{
+  box-shadow: 3px 3px 3px #717171;
+}
+
 .card img{
   width: 50%;
   min-height: 200px;
@@ -309,15 +342,27 @@ footer {
   position: absolute;
   bottom: 0;
   width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
 footer img{
-  width: 100px;
+  width: 60px;
 }
 
-footer p {
-  margin: 15px 0;
+#logo_uade {
+  width: 300px;
+  max-width: 300px;
 }
+
+footer img:hover {
+  filter: drop-shadow(4px 4px 4px rgba(245, 245, 245, 0.437));
+}
+
 
 #alumnos {
   display: flex;
@@ -340,6 +385,10 @@ footer p {
 
 footer .redes {
   max-width: 15px;
+}
+
+footer #redes img {
+  margin: 0 8px;
 }
 
 /* Mi lista */
@@ -393,12 +442,30 @@ hr{
   font-size: 20px;
 }
 
+iframe {
+  display: none;
+}
+
+.reproductor {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#video {
+  width: 100%;
+  height: 100%;
+}
+
 /*Evento*/
 
 #eventoHalloween{
   display: flex;
   min-height: 700px;
-  background-image: url(img/halloween-wallpapers-los-simpson2.jpg);
+  /* background-image: url(img/halloween-wallpapers-los-simpson2.jpg); */
+  background-image: url(img/prueba4.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -486,4 +553,84 @@ hr{
 
 .contenedorBotones a{
   text-decoration: 0;
+}
+
+/* Buscador */
+
+.buscador{
+  margin-bottom: 50px; 
+  padding: 0 5%;
+}
+
+
+.inputBuscador{
+  align-self: center; 
+  background-color: #262626;
+  color: white;
+  height: 68px; 
+  outline: none; 
+  width: 1800px;
+  border-width: 0 0 2px 0;
+  border-color: white;
+  font-size: 40px;    
+}
+
+.inputBuscador::placeholder { color: white; }
+
+.mySlidesPopulares, .mySlidesRecientemente, .mySlidesRecomendaciones{
+  display: none;
+  margin: auto;
+}
+
+
+a:hover{
+  text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+  /* Principal */
+
+  .contenedor {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cardContainer { 
+    min-width: auto;
+    overflow: hidden;
+  }
+
+ .recomendado img{ 
+    width: 100%;
+ }
+
+ .destacado img { 
+  width: 100%;
+ }
+
+ /* Busqueda */
+ .slides {
+  display: flex;
+  flex-direction: column;
+ }
+
+ .mi_lista {
+  width: 100%;
+ }
+
+ .ocultar_media {
+  visibility: hidden;
+ }
+
+ /* Reproductor */
+ #portada_reproductor img {
+  max-height: 80px;
+ }
+
+
+
+ 
 }

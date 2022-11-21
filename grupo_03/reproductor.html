@@ -13,9 +13,7 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="estilos.css">
-    <link rel="stylesheet" href="estilosLista.css">
-    
-    
+
     <title>Listado Star+</title>
 </head>
 <body>
@@ -42,20 +40,21 @@
     </header>
 
     <div id="portada_reproductor">
-        <img src="./img/logoSimpson.png" alt="">
-        <img src="./img/logo-intringulis-navidad.png" alt="">
-        <button>&#9658; VER AHORA</button>
-        <p>Marge gasta los ahorros de Navidad para que Bart se quite el tatuaje que se hizo, entonces Homero consigue un empleo como Santa para poder ganar dinero extra y comprar los regalos de Navidad para la familia.</p>
+        <img id="logo_simpsons" src="./img/logoSimpson.png" alt="logo de los simpsons">
+        <img id="logo_navidad" src="./img/logo-intringulis-navidad.png" alt="imagen de especial navidad">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/caUvt-JtZb0?controls=0autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <button id="ver_ahora" type="button" onclick="verAhora()">&#9658; VER AHORA</button>
+        <p id="text_reproductor">Marge gasta los ahorros de Navidad para que Bart se quite el tatuaje que se hizo, entonces Homero consigue un empleo como Santa para poder ganar dinero extra y comprar los regalos de Navidad para la familia.</p>
     </div>
 
-    
+
     <section id="recomendados">
         <!-- Sin reproducir -->
         <h1 id="tituloMiLista">Sugerencias</h1>
         <hr>
         <div class="contenedor">
-            <div class="mySlidesSinReproducir margin_auto">
-                <div class="recomendado mi_lista">
+            <div class="mySlidesSinReproducir margin_auto slides">
+                <div class="recomendado mi_lista sombreado">
                     <img src="img/456bg6bg.png" alt="los simpsons temporada 10 capitulo 15">
                     <div class="recomendadoCard">
                         <h3>Los Simpsons</h3>
@@ -63,15 +62,15 @@
                         <p>Capitulo XV</p>
                     </div>
                 </div>
-                <div class="recomendado mi_lista">
+                <div class="recomendado mi_lista sombreado">
                     <img src="img/222.png" alt="los simpsons temporada 10 capitulo 16">
                     <div class="recomendadoCard">
                         <h3>Los Simpsons</h3>
                         <p>Temporada X</p>
                         <p>Capitulo XVI</p>
                     </div>
-                </div> 
-                <div class="recomendado mi_lista">
+                </div>
+                <div class="recomendado mi_lista sombreado">
                     <img src="img/444.png" alt="los simpsons temporada 10 capitulo 17">
                     <div class="recomendadoCard">
                         <h3>Los Simpsons</h3>
@@ -79,7 +78,7 @@
                         <p>Capitulo XVII</p>
                     </div>
                 </div>
-                <div class="recomendado mi_lista">
+                <div class="recomendado mi_lista sombreado">
                     <img src="img/45n3.png" alt="los simpsons temporada 10 capitulo 18">
                     <div class="recomendadoCard">
                         <h3>Los Simpsons</h3>
@@ -88,8 +87,8 @@
                     </div>
                 </div>
             </div>
-            <div class="mySlidesSinReproducir margin_auto">
-                <div class="recomendado mi_lista">
+            <div class="mySlidesSinReproducir margin_auto ocultar_media">
+                <div class="recomendado mi_lista sombreado">
                     <img src="img/45n3.png" alt="los simpsons temporada 10 capitulo 18">
                     <div class="recomendadoCard">
                         <h3>Los Simpsons</h3>
@@ -97,7 +96,7 @@
                         <p>Capitulo XVIII</p>
                     </div>
                 </div>
-                <div class="recomendado mi_lista">
+                <div class="recomendado mi_lista sombreado">
                     <img src="img/444.png" alt="los simpsons temporada 10 capitulo 17">
                     <div class="recomendadoCard">
                         <h3>Los Simpsons</h3>
@@ -105,7 +104,7 @@
                         <p>Capitulo XVII</p>
                     </div>
                 </div>
-                <div class="recomendado mi_lista">
+                <div class="recomendado mi_lista sombreado">
                     <img src="img/456bg6bg.png" alt="los simpsons temporada 10 capitulo 15">
                     <div class="recomendadoCard">
                         <h3>Los Simpsons</h3>
@@ -113,24 +112,25 @@
                         <p>Capitulo XV</p>
                     </div>
                 </div>
-                <div class="recomendado mi_lista">
+                <div class="recomendado mi_lista sombreado">
                     <img src="img/222.png" alt="los simpsons temporada 10 capitulo 16">
                     <div class="recomendadoCard">
                         <h3>Los Simpsons</h3>
                         <p>Temporada X</p>
                         <p>Capitulo XVI</p>
                     </div>
-                </div> 
+                </div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 'mySlidesSinReproducir')">&#10094;</a>
-            <a class="next" onclick="plusSlides(1, 'mySlidesSinReproducir')">&#10095;</a>
+            <a class="prev ocultar_media" onclick="plusSlides(-1, 'mySlidesSinReproducir')">&#10094;</a>
+            <a class="next ocultar_media" onclick="plusSlides(1, 'mySlidesSinReproducir')">&#10095;</a>
         </div>
-</section> 
+</section>
 
 
 
-    <footer>
-        <a href="https://www.webcampus.uade.edu.ar/Login.aspx" target="_blank" rel="noopener noreferrer"><img src="./img/LogoUADE.png" alt="logotipo UADE universidad argentina de la empresa"></a>
+<footer>
+    <a href="https://www.webcampus.uade.edu.ar/Login.aspx" target="_blank" rel="noopener noreferrer"><img id="logo_uade" src="./img/LogoUADE.png" alt="logotipo UADE universidad argentina de la empresa"></a>
+    <div id="datos_footer">
         <div id="alumnos">
             <div class="alumno">
                 <a href="https://www.linkedin.com/in/salvador-frisoli-pirc-576092244" target="_blank" rel="noopener noreferrer"> <img class="redes" src="./img/logo_linkedin.png" alt="icono linkedin"> Frisoli Salvador</a>
@@ -145,8 +145,15 @@
         <p>Entrega: <i>24/11/2022</i> - Profesor: David Ernesto Ayala Velarde</p>
         <p>Diseño y Desarrollo Web - Universidad Argentina de la Empresa</p>
         <p>copyright &copy; 2022</p>
-    </footer>
-    
+    </div>
+    <div id="redes">
+        <a href="https://es-la.facebook.com/UADEcostaargentina/" target="_blank" rel="noopener noreferrer"><img src="./img/icono_facebook.png" alt="logo facebook que lleva al perfil de facebook de UADE Costa Argentina"></a>
+        <a href="https://www.instagram.com/uadecostaargentina/" target="_blank" rel="noopener noreferrer"><img src="./img/logo_instagram.png" alt="logo instagram que lleva al perfil de Uade Costa Argentina"></a>
+        <a href="https://www.linkedin.com/school/uade/" target="_blank" rel="noopener noreferrer"><img src="./img/icono_linkedin.png" alt="logo Linkedind que lleva al perfil de UADE"></a>
+    </div>
+</footer>
+
     <script src="miLista.js"></script>
+    <script src="reproductor.js"></script>
 </body>
 </html>
