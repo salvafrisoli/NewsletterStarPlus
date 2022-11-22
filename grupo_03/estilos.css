@@ -529,9 +529,17 @@ iframe {
 }
 /*Ventana Eventos*/
 
+#bannerEventos{
+  display: flex;
+  background-image: url(img/wallpapersden.com_the-simpsons-family-watching-tv_1360x768.jpg);
+  height: 70vh;
+  background-position: center;
+  background-size:cover ;
+}
+
 .contenedorEventos{
   line-height: 0;
-  margin-top: 30%;
+  margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -541,7 +549,7 @@ iframe {
 .contenedorEventos h2{
   color: whitesmoke;
   width: 85%;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
   align-self:initial;
   font-family: 'Neuzeit_lighter';
  
@@ -552,7 +560,7 @@ iframe {
   flex-direction: row;
   width: 85%;
   background-color: #230321;
-  margin-bottom: 5%;
+  margin-bottom: 7%;
 }
 .cardEvento img{
   width: 35%;
@@ -567,6 +575,7 @@ iframe {
   font-family:'Neuzeit';
   padding-top:4%;
   padding-left:4% ;
+  width: 58%;
   
   
 }
@@ -576,8 +585,13 @@ iframe {
 .textoEvento #descripcion {
   font-family: 'Neuzeit_lighter';
   font-weight: 500;
-  padding-top: 15%;
+  padding-top: 10%;
   font-size: 3vh;
+}
+.textoEvento #vota{
+  padding-top: 6%;
+ 
+  align-self: flex-end;
 }
 
 
