@@ -569,7 +569,7 @@ iframe {
   color: white;
   height: 68px; 
   outline: none; 
-  width: 1800px;
+  width: 100%;
   border-width: 0 0 2px 0;
   border-color: white;
   font-size: 40px;    
@@ -630,7 +630,33 @@ a:hover{
   max-height: 80px;
  }
 
+ /* Busquedas */
+ .mySlidesPopulares, .mySlidesRecientemente, .mySlidesRecomendaciones{
+    display: flex;
+    margin: auto;
+    
+  }
+  .recomendados{
+    display: flex;
+  }
 
+  #recomendados .contenedor{
+    display: flex;
+    flex-direction: row;
+    overflow: scroll;
+  }
+  .recomendado{
+    min-width: 250px;
+    margin: 10px;
+  }
 
+  .buscador{
+    margin-bottom: 50px; 
+    padding: 0;
+  }
+  .inputBuscador{
+    width: 90%; 
+    margin-left: 10px;
+  }
  
 }
