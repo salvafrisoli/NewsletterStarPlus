@@ -552,13 +552,19 @@ iframe {
   margin-bottom: 2%;
   align-self:initial;
   font-family: 'Neuzeit_lighter';
- 
 
 }
+
+.contenedorEventos a {
+  margin-bottom: 7%;
+  width: 85%;
+  height: 33vh;
+}
+
 .cardEvento{
   display: flex;
   flex-direction: row;
-  width: 85%;
+  width: 100%;
   background-color: #230321;
   margin-bottom: 7%;
 }
