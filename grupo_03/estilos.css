@@ -137,6 +137,7 @@ header .datosUsuario img {
   width: 50px;
 }
 
+
 /* Carrousel */
 
 .slideshow-container {
@@ -671,6 +672,11 @@ a:hover{
  /* Reproductor */
  #portada_reproductor img {
   max-height: 80px;
+ }
+
+ .mySlidesSinReproducir, mySlidesReproducidos {
+  display: flex;
+  margin: auto;
  }
 
  /* Busquedas */
