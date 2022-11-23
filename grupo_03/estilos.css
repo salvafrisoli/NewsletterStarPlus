@@ -647,7 +647,12 @@ a:hover{
  }
 
  .mi_lista {
-  width: 100%;
+  width: 400px;
+ }
+
+ .row {
+  flex-direction: row;
+  overflow: scroll;
  }
 
  .ocultar_media {
