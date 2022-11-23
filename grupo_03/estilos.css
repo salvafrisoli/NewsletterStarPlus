@@ -538,13 +538,10 @@ iframe {
 }
 
 .contenedorEventos{
-  line-height: 0;
   margin-top: 5%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  
-  
 }
 .contenedorEventos h2{
   color: whitesmoke;
@@ -572,14 +569,13 @@ iframe {
   width: 35%;
   height: 33vh;
   object-fit: cover;
-  object-position: 0 40%;
 }
 .textoEvento{
   display: flex;
   flex-direction: column;
   color: whitesmoke;
   font-family:'Neuzeit';
-  padding-top:4%;
+  padding-top:3%;
   padding-left:4% ;
   width: 58%;
   
@@ -589,14 +585,15 @@ iframe {
   font-size: 4vh;
 }
 .textoEvento #descripcion {
+  display: flex;
   font-family: 'Neuzeit_lighter';
   font-weight: 500;
   padding-top: 10%;
   font-size: 3vh;
+
 }
 .textoEvento #vota{
-  padding-top: 6%;
- 
+  padding-top: 3%;
   align-self: flex-end;
 }
 
@@ -704,5 +701,77 @@ a:hover{
     width: 90%; 
     margin-left: 10px;
   }
- 
+  /*Ventana Eventos*/
+  #bannerEventos{
+   height: 50vh;
+  }
+  
+  .contenedorEventos{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorEventos a {
+    margin-bottom: 30%;
+    width: 85%;
+    height: 50vh;
+  }
+  
+  .cardEvento{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  .cardEvento img{
+    width: 100%;
+    height: 33vh;
+  }
+  .textoEvento{
+    flex-direction: column;
+    padding-top:3%;
+    width: 93%;
+  }
+  .textoEvento #titulo{
+    text-align: center;
+    font-size: 4vh;
+  }
+  .textoEvento #descripcion {
+    text-align: center;
+    padding-top: 7%;
+    font-size: 2.5vh;
+  
+  }
+  .textoEvento #vota{
+    padding-top: 3%;
+    align-self: center;
+  }
+  /*Todos los eventos*/
+  #eventoHalloween{
+    height: 30vh;
+  }
+  #eventoHalloween h1{
+    font-size: 3vh;
+  }
+  
+  #eventoNavidad{
+    height: 30vh;
+  }
+  #eventoNavidad h1{
+    font-size: 3vh;
+  }
+  #eventoVacaciones{
+    height: 30vh;
+  }
+  #eventoVacaciones h1{
+    font-size: 3vh;
+  
+  }
+  #eventoEscuela{
+    height: 30vh;
+  }
+  #eventoEscuela h1{
+    font-size: 3vh;
+  }
+  
 }
