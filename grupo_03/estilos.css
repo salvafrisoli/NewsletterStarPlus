@@ -137,6 +137,7 @@ header .datosUsuario img {
   width: 50px;
 }
 
+
 /* Carrousel */
 
 .slideshow-container {
@@ -463,29 +464,30 @@ iframe {
   height: 100%;
 }
 
-/*Evento*/
+/*Todos los Eventos*/
+
+
 
 #eventoHalloween{
   display: flex;
-  min-height: 700px;
-  /* background-image: url(img/halloween-wallpapers-los-simpson2.jpg); */
+  height: 70vh;
   background-image: url(img/prueba4.jpg);
   background-size: cover;
-  background-position: center;
+  background-position: 0 37%;
 }
 #eventoHalloween h1{
   margin: 25% 0 0 10%;
   flex-direction: column-reverse;
   align-items: center;
   color: white;
-  font-size: 70px;
+  font-size: 7vh;
   text-shadow: 0px 0px 25px black;
 
 }
 
 #eventoNavidad{
   display: flex;
-  min-height: 700px;
+  height: 70vh;
   background-image: url(img/1873960.jpg);
   background-size: cover;
   background-position:top;
@@ -495,13 +497,13 @@ iframe {
   flex-direction: column-reverse;
   align-items: center;
   color: white;
-  font-size: 70px;
+  font-size: 7vh;
   text-shadow: 0px 0px 25px gray;
 
 }
 #eventoVacaciones{
   display: flex;
-  min-height: 700px;
+  height: 70vh;
   background-image: url(img/Los-Simpson-Wallpapers-2.jpg);
   background-size: cover;
   background-position: center;
@@ -511,13 +513,13 @@ iframe {
   flex-direction: column-reverse;
   align-items: center;
   color: white;
-  font-size: 70px;
+  font-size: 7vh;
   text-shadow: 0px 0px 25px black;
 
 }
 #eventoEscuela{
   display: flex;
-  min-height: 700px;
+  height: 70vh;
   background-image: url(img/232d64e61c73ad1ba144aef552a2f7c2.jpg);
   background-size: cover;
   background-position: center;
@@ -526,38 +528,80 @@ iframe {
   margin: 25% 0 0 10%;
   flex-direction: column-reverse;
   align-items: center;
-  color: white;
-  font-size: 60px;
+  color: #FFCD1F;
+  font-size: 7vh;
   text-shadow: 0px 0px 25px black;
 }
+/*Ventana Eventos*/
 
-.contenedorBotones{
+#bannerEventos{
   display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
-	align-items: center;
-	align-content: stretch;
+  background-image: url(img/wallpapersden.com_the-simpsons-family-watching-tv_1360x768.jpg);
+  height: 70vh;
+  background-position: center;
+  background-size:cover ;
+}
+
+.contenedorEventos{
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contenedorEventos h2{
+  color: whitesmoke;
+  width: 85%;
+  margin-bottom: 2%;
+  align-self:initial;
+  font-family: 'Neuzeit_lighter';
+
+}
+
+.contenedorEventos a {
+  margin-bottom: 7%;
+  width: 85%;
+  height: 33vh;
+}
+
+.cardEvento{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #230321;
+  margin-bottom: 7%;
+}
+.cardEvento img{
+  width: 35%;
+  height: 33vh;
+  object-fit: cover;
+}
+.textoEvento{
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  font-family:'Neuzeit';
+  padding-top:3%;
+  padding-left:4% ;
+  width: 58%;
   
+  
+}
+.textoEvento #titulo{
+  font-size: 4vh;
+}
+.textoEvento #descripcion {
+  display: flex;
+  font-family: 'Neuzeit_lighter';
+  font-weight: 500;
+  padding-top: 10%;
+  font-size: 3vh;
 
 }
-.botonEvento{
-  margin-top: 100px;
-  text-align: center;
-  background-color: whitesmoke;
-  color: #230321;
-  font-size: 20px;
-  font-family: 'Neuzeit_bold';
-  width: 200px;
-  height: 200px;
-}
-.botonEvento p{
-  padding-top: 75px;
+.textoEvento #vota{
+  padding-top: 3%;
+  align-self: flex-end;
 }
 
-.contenedorBotones a{
-  text-decoration: 0;
-}
 
 /* Buscador */
 
@@ -664,6 +708,11 @@ a:hover{
   max-height: 80px;
  }
 
+ .mySlidesSinReproducir, mySlidesReproducidos {
+  display: flex;
+  margin: auto;
+ }
+
  /* Busquedas */
  .mySlidesPopulares, .mySlidesRecientemente, .mySlidesRecomendaciones{
     display: flex;
@@ -692,5 +741,77 @@ a:hover{
     width: 90%; 
     margin-left: 10px;
   }
- 
+  /*Ventana Eventos*/
+  #bannerEventos{
+   height: 50vh;
+  }
+  
+  .contenedorEventos{
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedorEventos a {
+    margin-bottom: 30%;
+    width: 85%;
+    height: 50vh;
+  }
+  
+  .cardEvento{
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 7%;
+  }
+  .cardEvento img{
+    width: 100%;
+    height: 33vh;
+  }
+  .textoEvento{
+    flex-direction: column;
+    padding-top:3%;
+    width: 93%;
+  }
+  .textoEvento #titulo{
+    text-align: center;
+    font-size: 4vh;
+  }
+  .textoEvento #descripcion {
+    text-align: center;
+    padding-top: 7%;
+    font-size: 2.5vh;
+  
+  }
+  .textoEvento #vota{
+    padding-top: 3%;
+    align-self: center;
+  }
+  /*Todos los eventos*/
+  #eventoHalloween{
+    height: 30vh;
+  }
+  #eventoHalloween h1{
+    font-size: 3vh;
+  }
+  
+  #eventoNavidad{
+    height: 30vh;
+  }
+  #eventoNavidad h1{
+    font-size: 3vh;
+  }
+  #eventoVacaciones{
+    height: 30vh;
+  }
+  #eventoVacaciones h1{
+    font-size: 3vh;
+  
+  }
+  #eventoEscuela{
+    height: 30vh;
+  }
+  #eventoEscuela h1{
+    font-size: 3vh;
+  }
+  
 }
