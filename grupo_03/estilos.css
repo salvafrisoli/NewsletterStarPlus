@@ -233,6 +233,8 @@ header .datosUsuario img {
   margin-left: 5%;
 }
 
+
+
 .card{
   display: flex;
   background-color: #230321;
@@ -275,6 +277,8 @@ mark {
 .cardContainer p {
   color: #A5A0A0;
 }
+
+
 
 /* Recomendados */
 #recomendados{
@@ -595,7 +599,8 @@ a:hover{
 
   .contenedor {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    overflow: scroll;
   }
 
   .cardContainer { 
@@ -610,6 +615,30 @@ a:hover{
  .destacado img { 
   width: 100%;
  }
+
+ .destacado {
+  min-width: 250px;
+  margin: 10px;
+ }
+
+ /* Continuar Viendo */
+ .continuar_viendo {
+  min-width: 300px;
+  min-height: 200px;
+}
+
+.sombreado {
+  /* height: 400px; */
+  width: 400px;
+}
+
+.card {
+  flex-direction: column;
+}
+
+.card img {
+  width: 400px;
+}
 
  /* Busqueda */
  .slides {
