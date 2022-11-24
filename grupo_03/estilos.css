@@ -593,13 +593,14 @@ iframe {
   display: flex;
   font-family: 'Neuzeit_lighter';
   font-weight: 500;
-  padding-top: 10%;
+  padding-top: 6.5%;
   font-size: 3vh;
 
 }
 .textoEvento #vota{
   padding-top: 3%;
   align-self: flex-end;
+
 }
 
 
