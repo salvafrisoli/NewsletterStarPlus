@@ -13,7 +13,12 @@
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" href="estilos.css">
-    
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+
     <title>Trabajo Grupal Star+</title>
 </head>
 <body>
@@ -22,16 +27,17 @@
             <div>
                 <a href="https://www.starplus.com/es-ar" target="_blank" rel="noopener noreferrer"><img id="logo" src="img/STAR.png" alt="logo de star+ la marca piolita de ver pelis. jaja"></a>
             </div>
-            <nav>
+            <nav >
                 <!-- NAVBAR - ACCESOS Y LOGO STAR -->
-                <ul>
+                <div class="burger-nav"><i class="fa fa-bars"></i></div>
+                <ul class="desktop-nav">
                     <li><a href="index.html"> <img src="img/home.png" alt="icono casa simbolizando inicio"> INICIO</a> </li>
                     <li><a href="busquedas.html"> <img src="img/lupa.png" alt="icono lupa simbolizando busquedas"> BÙSQUEDA</a></li>
                     <li><a href="listado.html"> <img src="img/plus.png" alt="icono simbolo más lleva a lista personalizada"> MI LISTA</a></li>
                     <li><a href="eventos.html"> <img src="img/estrella.png" alt="icono estrella redirige a eventos del sitio web"> EVENTOS</a></li>
                 </ul>
-                
             </nav>
+
             <div class="datosUsuario">
                 <!-- DATOS USUARIO -->
                 <h2>Usuario</h2>
@@ -39,6 +45,15 @@
             </div>
         </div>
     </header>
+
+    <div class="burger-menu" id="burger-menu" style="display: none;">
+        <ul class="burger-menu">
+            <li><a href="index.html"> <img src="img/home.png" alt="icono casa simbolizando inicio"> INICIO</a> </li>
+            <li><a href="busquedas.html"> <img src="img/lupa.png" alt="icono lupa simbolizando busquedas"> BÙSQUEDA</a></li>
+            <li><a href="listado.html"> <img src="img/plus.png" alt="icono simbolo más lleva a lista personalizada"> MI LISTA</a></li>
+            <li><a href="eventos.html"> <img src="img/estrella.png" alt="icono estrella redirige a eventos del sitio web"> EVENTOS</a></li>
+        </ul>
+      </div>
 
     <section id="carrousel">   
         <!-- Seccion Carrucel -->
@@ -71,7 +86,7 @@
 
     <section id="continuarViendo">
         <h1>Continuar Viendo</h1>
-        <div class="contenedor continuar_viendo">
+        <div class="contenedor">
             <a href="./reproductor.html">
                 <div class="card sombreado">
                     <img src="img/simpson-navidad.png" alt="imagen de los simpson navidad">
@@ -232,5 +247,6 @@
     </footer>
     
     <script src="index.js"></script>
+    <script src="nav-hamburgesa.js"></script>
 </body>
 </html>

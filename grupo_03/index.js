@@ -30,3 +30,7 @@ function showSlides(n,className) {
 const params = (new URL(location)).searchParams;
 
 params.get('search')
+
+
+
+
